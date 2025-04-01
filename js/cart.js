@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
     
     if (!currentUser) {
-        window.location.href = "try.html";
+        window.location.href = "storeout.html";
         return;
     }
 
@@ -28,7 +28,7 @@ document.addEventListener("click", function(event) {
 
 document.getElementById("sign-out").addEventListener("click", function() {
     alert("You have signed out!");
-    window.location.href = "try.html"; 
+    window.location.href = "storeout.html"; 
 });
 function toggleDropdown() {
     var dropdown = document.getElementById("dropdown-menu");

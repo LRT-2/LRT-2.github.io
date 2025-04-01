@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("user-role").textContent = currentUser.role;
       }
     } else {
-      window.location.href = "try.html";
+      window.location.href = "storeout.html";
     }
 
     document
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .addEventListener("click", function () {
         localStorage.removeItem("currentUser");
 
-        window.location.href = "index.html";
+        window.location.href = "signup.html";
       });
   });
 
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
     if (!currentUser) {
-      window.location.href = "try.html";
+      window.location.href = "storeout.html";
       return;
     }
 
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .getElementById("sign-out")
     .addEventListener("click", function () {
       alert("You have signed out!");
-      window.location.href = "try.html";
+      window.location.href = "storeout.html";
     });
   function toggleDropdown() {
     var dropdown = document.getElementById("dropdown-menu");

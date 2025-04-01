@@ -55,5 +55,5 @@ window.onclick = function(event) {
 
 function submitPayment() {
     alert("Order Complete!");
-    window.location.href = "after signin.html"; 
+    window.location.href = "storein.html"; 
 }
