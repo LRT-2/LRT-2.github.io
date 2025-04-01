@@ -1,0 +1,237 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, white 30%, #202c5c 100%);
+    min-height: 100vh;
+}
+
+/*HEADER*/
+.top-bar {
+    position: fixed;
+    background: linear-gradient(45deg, #5e7ab6, #202c5c);
+    text-align: center;
+    padding: 13px;
+    font-size: 17.5px;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+}
+.upper {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100px; 
+    overflow: visible; 
+}
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+}
+.logo img {
+    height: 150px;
+    width: auto;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #4d64c2;
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.logo a:hover {
+    color: #0074f0; 
+}
+
+.nav-links {
+    padding-right: 120px;
+    margin: 11px;
+    position: relative; 
+    z-index: 1000;
+}
+
+.nav-links button {
+    margin-left: 3px;
+}
+
+.nav-links p {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 12px 22px;
+    color: #032d59;
+}
+
+.code {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 12px 22px;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 25px; 
+    color: #032d59;
+    
+}
+
+.code:hover {
+    background: rgba(96, 172, 188, 0.2); 
+    color: #0074f0; 
+    cursor: pointer;
+}
+
+
+.sign-in {
+    font-size: 18px;
+    background: none;
+    color: #032d59;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: -5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    background-size: 200% 100%;
+}
+
+.sign-in:hover {
+    background: rgba(96, 172, 188, 0.2); 
+    color: #0074f0; 
+    cursor: pointer;
+}
+
+
+.item-title {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 195px;
+}
+
+.item-title h2 {
+    color: #1a294a;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    right: 0;
+    background: white;
+    min-width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 9999;
+    right: 0; 
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #1a294a;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+}
+
+.show-dropdown {
+    display: block;
+}
+
+.sign-in i {
+    margin-left: 5px; 
+    transition: transform 0.3s ease;
+}
+
+.rotate-up {
+    transform: rotate(180deg);
+}
+/*MAIN*/
+main {
+    padding-top: 180px; 
+}
+
+/*FOOTER*/
+footer {
+    background: transparent;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: white;
+}
+
+.footer-educ {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    padding: 20px 0px;
+    margin-top: 20px;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}   
+
+.footer-bottomtext-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px; 
+    border-top: 1px solid #ddd; 
+    padding-top: 20px;
+}
+
+.footer-bottomtext {
+    max-width: 500px;
+    text-align: left;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.footer-bottomtext-container img {
+    width: 100px; 
+    height: auto;   
+}
