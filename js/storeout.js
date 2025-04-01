@@ -1,14 +1,11 @@
- /*CAROUSEL*/
- document.addEventListener("DOMContentLoaded", function () {
-  var myCarousel = new bootstrap.Carousel(
-    document.querySelector("#carousel"),
-    {
-      interval: 10000,
-      ride: "carousel",
-      wrap: true,
-      touch: true,
-    }
-  );
+/*CAROUSEL*/
+document.addEventListener("DOMContentLoaded", function () {
+  var myCarousel = new bootstrap.Carousel(document.querySelector("#carousel"), {
+    interval: 10000,
+    ride: "carousel",
+    wrap: true,
+    touch: true,
+  });
 });
 /*CAROUSEL*/
 
@@ -127,26 +124,26 @@ document.addEventListener("DOMContentLoaded", function () {
       if (hiddenItems.length > 0) {
         hiddenItems.forEach((item) => {
           hiddenItemsHTML += `
-                      <div class="hidden-item">
-                          <img src="${item.img}" alt="${item.title}" style="width: 50px; height: auto;">
-                          <span>${item.qty} ${item.title}</span>
-                      </div>
-                  `;
+                        <div class="hidden-item">
+                            <img src="${item.img}" alt="${item.title}" style="width: 50px; height: auto;">
+                            <span>${item.qty} ${item.title}</span>
+                        </div>
+                    `;
         });
       }
 
       modalItemBox.innerHTML = `
-              <div class="image-box">
-                  ${tag}
-                  <img src="${imgSrc}" alt="${title}">
-              </div>
-              <div class="text-box">
-                  <h2>${title}</h2>
-                  <p>${description}</p>
-                  ${hiddenItemsHTML}
-                  <button class="price" onclick="window.location.href='signup.html'">${price}</button>
-              </div>
-          `;
+                <div class="image-box">
+                    ${tag}
+                    <img src="${imgSrc}" alt="${title}">
+                </div>
+                <div class="text-box">
+                    <h2>${title}</h2>
+                    <p>${description}</p>
+                    ${hiddenItemsHTML}
+                    <button class="price" onclick="window.location.href='signup.html'">${price}</button>
+                </div>
+            `;
 
       modal.style.display = "flex";
     });
@@ -183,27 +180,27 @@ document.addEventListener("DOMContentLoaded", function () {
       if (hiddenItems.length > 0) {
         hiddenItems.forEach((item) => {
           hiddenItemsHTML += `
-                      <div class="hidden-item">
-                          <img src="${item.img}" alt="${item.title}" style="width: 50px; height: auto;">
-                          <span>${item.qty} ${item.title}</span>
-                      </div>
-                  `;
+                        <div class="hidden-item">
+                            <img src="${item.img}" alt="${item.title}" style="width: 50px; height: auto;">
+                            <span>${item.qty} ${item.title}</span>
+                        </div>
+                    `;
         });
       }
 
       modalItemBox.innerHTML = `
-              <div class="modal-content2">
-                  <div class="image-box2">
-                      <img src="${imgSrc}" alt="${title}">
-                  </div>
-                  <div class="text-box2">
-                      <h2>${title}</h2>
-                      <p>${description}</p>
-                      ${hiddenItemsHTML}
-                      <button class="price2" onclick="window.location.href='signup.html'">${price}</button>
-                  </div>
-              </div>
-          `;
+                <div class="modal-content2">
+                    <div class="image-box2">
+                        <img src="${imgSrc}" alt="${title}">
+                    </div>
+                    <div class="text-box2">
+                        <h2>${title}</h2>
+                        <p>${description}</p>
+                        ${hiddenItemsHTML}
+                        <button class="price2" onclick="window.location.href='signup.html'">${price}</button>
+                    </div>
+                </div>
+            `;
 
       modal.style.display = "flex";
     });
