@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             JSON.stringify(userExists)
           );
 
-          window.location.href = "after signin.html";
+          window.location.href = "storein.html";
         } else {
           errorMessage.textContent = "Invalid Username or Password";
         }
