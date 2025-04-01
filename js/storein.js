@@ -1,5 +1,5 @@
-   /*CAROUSEL*/
-   document.addEventListener("DOMContentLoaded", function () {
+/*CAROUSEL*/
+document.addEventListener("DOMContentLoaded", function () {
     var myCarousel = new bootstrap.Carousel(document.querySelector("#carousel"), {
         interval: 10000,  
         ride: "carousel",
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
     
     if (!currentUser) {
-        window.location.href = "storeout.html";
+        window.location.href = "try.html";
         return;
     }
 
@@ -239,7 +239,7 @@ document.addEventListener("click", function(event) {
 
 document.getElementById("sign-out").addEventListener("click", function() {
     alert("You have signed out!");
-    window.location.href = "storeout.html"; 
+    window.location.href = "try.html"; 
 });
 function toggleDropdown() {
     var dropdown = document.getElementById("dropdown-menu");
