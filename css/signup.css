@@ -1,0 +1,248 @@
+html {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, white 30%, #202c5c 100%);
+    min-height: 100vh;
+  }
+
+  .hidden {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .hidden2 {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .show2 {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /*HEADER*/
+  .top-bar {
+    position: fixed;
+    background: linear-gradient(45deg, #5e7ab6, #202c5c);
+    text-align: center;
+    padding: 13px;
+    font-size: 17.5px;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+  }
+  .upper {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100px; 
+    overflow: hidden; 
+  }
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+  }
+  .logo img {
+    height: 150px;
+    width: auto;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: #4d64c2;
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .logo a:hover {
+    color: #0074f0;
+  }
+
+  .item-title {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 195px;
+  }
+
+  .item-title h2 {
+    color: #1a294a;
+    font-weight: bold;
+  }
+
+  /*MAIN*/
+  main {
+    padding-top: 0px;
+  }
+
+  .signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    padding: 0;
+    padding-top: 150px;
+  }
+
+  .signin-box {
+    background: white; 
+    border-radius: 20px;
+    padding: 40px; 
+    width: 500px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  }
+
+  .signin-box h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #1a294a;
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a294a;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .remember-me input {
+    margin-right: 5px;
+  }
+
+  .signin-btn {
+    background: white; 
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #1a294a; 
+    transition: background 0.3s ease-in-out, transform 0.2s; 
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .signin-btn:hover {
+    transform: scale(1.03); 
+    background: #1a294a;
+    color: white;
+  }
+
+  .signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .signup-link a {
+    color: #0074f0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+
+  /*FOOTER*/
+  footer {
+    background: transparent;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: white;
+  }
+
+  .footer-educ {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    padding: 20px 0px; 
+    margin-top: 20px; 
+    justify-content: center; 
+    gap: 20px;
+  }
+
+  .footer-bottom a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-bottomtext-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+
+  .footer-bottomtext {
+    max-width: 500px;
+    text-align: left;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .footer-bottomtext-container img {
+    width: 100px; 
+    height: auto;
+  }
