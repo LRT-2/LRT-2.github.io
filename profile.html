@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <div class="top-bar">Welcome to Pokemon LRT 2 Web Store!</div>
+      <nav class="upper">
+        <div class="logo">
+          <a href="#">
+            <img src="LRT2 LOGO.png" alt="LRT2 Logo" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <button
+            class="code"
+            onclick="window.location.href='after signin.html'"
+          >
+            Store
+          </button>
+
+          <div class="dropdown">
+            <button class="sign-in" onclick="toggleDropdown()">
+              <span id="username-placeholder"></span>
+              <i id="arrow-icon" class="fas fa-chevron-down"></i>
+            </button>
+            <div id="dropdown-menu" class="dropdown-content">
+              <a href="cart.html">Cart</a>
+              <a href="transactions.html">Transactions</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="profile-card">
+        <div class="profile-avatar">
+          <img src="Profile.png" alt="Trainer Avatar" id="user-avatar" />
+        </div>
+        <h2 class="profile-name" id="username">Loading...</h2>
+        <p class="profile-role" id="user-role">Username</p>
+
+        <div class="profile-info-container">
+          <div class="profile-info">
+            <div class="profile-info-label">Email:</div>
+            <div class="profile-info-value" id="user-email">Loading...</div>
+          </div>
+          <div class="profile-info">
+            <div class="profile-info-label">User ID:</div>
+            <div class="profile-info-value" id="pokemon-id">Loading...</div>
+          </div>
+          <div class="profile-info">
+            <div class="profile-info-label">Joined:</div>
+            <div class="profile-info-value" id="user-joined">April 2025</div>
+          </div>
+          <div class="profile-info">
+            <div class="profile-info-label">Status:</div>
+            <div class="profile-info-value" id="user-status">Active</div>
+          </div>
+        </div>
+
+        <button class="view-transactions-btn">Log Out</button>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+      <div class="footer-bottomtext-container">
+        <div class="footer-bottomtext">
+          <p>
+            ©2023 Niantic, Inc. ©2023 Pokémon. ©1995-2023 Nintendo / Creatures
+            Inc. / GAME FREAK inc. Pokémon and Pokémon character names are
+            trademarks of Nintendo. Apple and the Apple logo are trademarks of
+            Apple Inc., registered in the U.S. and other countries. App Store is
+            a service mark of Apple Inc. Android, Google Play and the Google
+            Play logo are trademarks of Google LLC. During gameplay, please be
+            aware of your surroundings and play safely.
+          </p>
+        </div>
+        <a href="https://nianticlabs.com/?hl=en" target="_blank">
+          <img src="Niantic Logo 256x256.png" alt="Niantic Logo" />
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <a href="https://nianticlabs.com/terms" target="_blank"
+          >Terms of Service</a
+        >
+        <a href="https://nianticlabs.com/privacy" target="_blank"
+          >Privacy Policy</a
+        >
+        <a href="https://nianticlabs.com/ip-policy" target="_blank"
+          >Copyright Policy</a
+        >
+        <a href="https://nianticlabs.com/guidelines" target="_blank"
+          >Player Guidelines</a
+        >
+      </div>
+
+      <div class="footer-educ">
+        <p>
+          "For educational purposes only and no copyright infringement is
+          intended."
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

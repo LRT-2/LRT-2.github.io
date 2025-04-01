@@ -1,0 +1,344 @@
+:root {
+    --primary: #4d64c2;
+    --accent: #e74c3c;
+    --light-bg: #f5f7fa;
+    --dark: #333333;
+    --button: #00bfa5;
+    --button-hover: #00a896;
+    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f5f7fa, #5e7ab6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*HEADER*/
+  .top-bar {
+    position: fixed;
+    background: linear-gradient(45deg, #5e7ab6, #202c5c);
+    text-align: center;
+    padding: 13px;
+    font-size: 17.5px;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+  }
+  .upper {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    overflow: visible;
+  }
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+  }
+  .logo img {
+    height: 150px;
+    width: auto;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: #4d64c2;
+    transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .logo a:hover {
+    color: #0074f0;
+  }
+
+  .nav-links {
+    padding-right: 120px;
+    margin: 11px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .nav-links button {
+    margin-left: 3px;
+  }
+
+  .nav-links p {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 12px 22px;
+    color: #032d59;
+  }
+
+  .code {
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 12px 22px;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 25px;
+    color: #032d59;
+  }
+
+  .code:hover {
+    background: rgba(96, 172, 188, 0.2);
+    color: #0074f0;
+    cursor: pointer;
+  }
+
+  .sign-in {
+    font-size: 18px;
+    background: none;
+    color: #032d59;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: -5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    background-size: 200% 100%;
+  }
+
+  .sign-in:hover {
+    background: rgba(96, 172, 188, 0.2);
+    color: #0074f0;
+    cursor: pointer;
+  }
+
+  .item-title {
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 195px;
+  }
+
+  .item-title h2 {
+    color: #1a294a;
+    font-weight: bold;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    min-width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 9999;
+    right: 0;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #1a294a;
+    font-weight: bold;
+  }
+
+  .dropdown-content a:hover {
+    background: #f1f1f1;
+  }
+
+  .show-dropdown {
+    display: block;
+  }
+
+  .sign-in i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .rotate-up {
+    transform: rotate(180deg);
+  }
+
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    padding-top: 200px;
+  }
+
+  /* Profile Card */
+  .profile-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--card-shadow);
+    width: 450px;
+    padding: 30px;
+    text-align: center;
+    border-top: 4px solid var(--accent);
+  }
+
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 3px solid #f0f0f0;
+  }
+
+  .profile-avatar img {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-name {
+    color: var(--accent);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .profile-role {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .profile-info-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .profile-info {
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: flex;
+  }
+
+  .profile-info:last-child {
+    margin-bottom: 0;
+  }
+
+  .profile-info-label {
+    min-width: 100px;
+    font-weight: 600;
+    color: #555;
+  }
+
+  .profile-info-value {
+    color: #4d64c2;
+    font-weight: 500;
+  }
+
+  .view-transactions-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .view-transactions-btn:hover {
+    background-color: #c0392b;
+  }
+
+  /* Footer*/
+  footer {
+    background: transparent;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: white;
+  }
+  .footer-educ {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .footer-bottom {
+    display: flex;
+    padding: 20px 0px;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .footer-bottom a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  .footer-bottomtext-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  .footer-bottomtext {
+    max-width: 500px;
+    text-align: left;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  .footer-bottomtext-container img {
+    width: 100px;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .profile-card {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+    }
+  }
