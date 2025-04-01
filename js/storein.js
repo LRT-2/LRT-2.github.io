@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
     
     if (!currentUser) {
-        window.location.href = "storein.html";
+        window.location.href = "storeout.html";
         return;
     }
 
